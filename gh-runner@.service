@@ -1,0 +1,13 @@
+[Unit]
+Description=GitHub Runner Service runner-%i
+Requires=docker.service
+After=docker.service
+
+[Service]
+Type=simple
+Restart=always
+EnvironmentFile=/etc/default/gh-runner
+ExecStart=/bin/bash -c "docker run --privileged --name runner-%i --rm -e GH_OWNER=${GH_OWNER} -e GH_TOKEN=${GH_TOKEN} -e RUNNER_NAME=runner-%i ${ARGS} syadykin/gh-runner:latest"
+
+[Install]
+WantedBy=multi-user.target
