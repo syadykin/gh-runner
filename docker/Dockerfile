@@ -21,7 +21,8 @@ RUN --mount=type=cache,target=/var/cache/apt \
       ca-certificates openssh-client wget sudo liblttng-ust1 \
       libkrb5-3 zlib1g libssl3 libicu72 groff less unzip curl \
       jq e2fsprogs iptables openssl pigz xz-utils xfsprogs \
-      btrfs-progs s6 iproute2
+      btrfs-progs s6 iproute2 ansible-core ansible python3-pip \
+      python3-botocore python3-boto3
 
 RUN addgroup --system dockremap \
 	&& useradd -r -g dockremap dockremap \
