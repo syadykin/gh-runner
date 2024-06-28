@@ -82,3 +82,5 @@ Changelog
 --------
 
 * 0.1.0 - switch to Ubuntu 24.04
+
+* 0.1.1 - update gh runner to 2.317.0
