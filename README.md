@@ -81,4 +81,4 @@ Happy building!
 Changelog
 --------
 
-* 0.0.4 - switch to Ubuntu 24.04
+* 0.1.0 - switch to Ubuntu 24.04
