@@ -3,7 +3,7 @@ ARG DOCKER_COMPOSE_VERSION=2.23.3
 ARG GH_RUNNER_VERSION=2.311.0
 ARG DIND_COMMIT=65cfcc28ab37cb75e1560e4b4738719c07c6618e
 
-FROM ubuntu:23.10
+FROM ubuntu:24.04
 
 ARG DOCKER_VERSION
 ARG DOCKER_COMPOSE_VERSION
@@ -19,7 +19,7 @@ RUN --mount=type=cache,target=/var/cache/apt \
     apt update \
     && apt install --no-install-recommends -y \
       ca-certificates openssh-client wget sudo liblttng-ust1 \
-      libkrb5-3 zlib1g libssl3 libicu72 groff less unzip curl \
+      libkrb5-3 zlib1g libssl3 libicu74 groff less unzip curl \
       jq e2fsprogs iptables openssl pigz xz-utils xfsprogs \
       btrfs-progs s6 iproute2 ansible-core ansible python3-pip \
       python3-botocore python3-boto3

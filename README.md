@@ -77,3 +77,8 @@ AWS_SECRET_ACCESS_KEY=DrvB...
 ```
 
 Happy building!
+
+Changelog
+--------
+
+* 0.0.4 - switch to Ubuntu 24.04
