@@ -1,9 +1,9 @@
-ARG DOCKER_VERSION=24.0.7
-ARG DOCKER_COMPOSE_VERSION=2.23.3
-ARG GH_RUNNER_VERSION=2.317.0
-ARG DIND_COMMIT=65cfcc28ab37cb75e1560e4b4738719c07c6618e
+ARG DOCKER_VERSION=29.9.0
+ARG DOCKER_COMPOSE_VERSION=5.6.0
+ARG GH_RUNNER_VERSION=2.338.0
+ARG DIND_COMMIT=3dcf5047a1754f38dfa7e97e4fd156de4aba3808
 
-FROM ubuntu:24.04
+FROM ubuntu:26.04
 
 ARG DOCKER_VERSION
 ARG DOCKER_COMPOSE_VERSION
@@ -19,7 +19,7 @@ RUN --mount=type=cache,target=/var/cache/apt \
     apt update \
     && apt install --no-install-recommends -y \
       ca-certificates openssh-client wget sudo liblttng-ust1 \
-      libkrb5-3 zlib1g libssl3 libicu74 groff less unzip curl \
+      libkrb5-3 zlib1g libssl3 libicu78 groff less unzip curl \
       jq e2fsprogs iptables openssl pigz xz-utils xfsprogs \
       btrfs-progs s6 iproute2 ansible-core ansible python3-pip \
       python3-botocore python3-boto3

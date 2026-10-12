@@ -84,3 +84,5 @@ Changelog
 * 0.1.0 - switch to Ubuntu 24.04
 
 * 0.1.1 - update gh runner to 2.317.0
+
+* 0.2.0 - updates: ubuntu (26.04), docker (29.9.0), compose (5.6.0), runner (2.338.0)
